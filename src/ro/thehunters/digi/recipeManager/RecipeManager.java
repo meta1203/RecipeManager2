@@ -74,6 +74,8 @@ public class RecipeManager extends JavaPlugin
         
         plugin = this;
         
+        settings = new Settings(Bukkit.getServer().getConsoleSender());
+        
         FurnaceData.init(); // dummy caller
         Furnaces.load(); // load saved furnaces...
         
